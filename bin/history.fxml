@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="671.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="historycontroller">
+   <children>
+      <Hyperlink layoutX="14.0" layoutY="23.0" onAction="#back" text="&lt;- back" />
+      <Label layoutX="39.0" layoutY="275.0" prefHeight="51.0" prefWidth="266.0" text="Balance statement :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="bal" layoutX="305.0" layoutY="277.0" prefHeight="46.0" prefWidth="258.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="trns" layoutX="13.0" layoutY="240.0" prefHeight="36.0" prefWidth="203.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="55.0" prefHeight="39.0" prefWidth="292.0" text="Account balance">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="89.0" fitWidth="83.0" layoutX="274.0" layoutY="150.0">
+         <image>
+            <Image url="@statement.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

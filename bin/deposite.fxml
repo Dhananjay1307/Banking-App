@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="569.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="depositecontroller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="177.0" layoutY="35.0" prefHeight="66.0" prefWidth="205.0" text="Deposite">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwd" layoutX="175.0" layoutY="270.0" prefHeight="43.0" prefWidth="220.0" promptText="Password">
+         <font>
+            <Font size="20.0" />
+         </font></PasswordField>
+      <TextField fx:id="amount" blendMode="SRC_ATOP" layoutX="175.0" layoutY="209.0" prefHeight="43.0" prefWidth="220.0" promptText="Enter Amount">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Label fx:id="succ" alignment="CENTER" layoutY="334.0" prefHeight="41.0" prefWidth="569.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button layoutX="240.0" layoutY="396.0" mnemonicParsing="false" onAction="#ok" prefHeight="41.0" prefWidth="79.0" text="Deposit">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Hyperlink layoutX="14.0" layoutY="23.0" onAction="#back" text="&lt;- back" />
+      <Label fx:id="remaining" alignment="CENTER" layoutX="1.0" layoutY="495.0" prefHeight="17.0" prefWidth="569.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="succes" alignment="CENTER" layoutX="1.0" layoutY="452.0" prefHeight="17.0" prefWidth="569.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="68.0" fitWidth="69.0" layoutX="251.0" layoutY="127.0">
+         <image>
+            <Image url="@depositt.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
